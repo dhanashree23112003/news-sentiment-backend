@@ -7,8 +7,9 @@ app = FastAPI()
 # Load model from HuggingFace Hub
 classifier = pipeline(
     "sentiment-analysis",
-    model="dhanashree2311/news-sentimnet-roberta"
+    model="dhanashree2311/news-distilroberta-sentiment"
 )
+
 
 class TextRequest(BaseModel):
     text: str
